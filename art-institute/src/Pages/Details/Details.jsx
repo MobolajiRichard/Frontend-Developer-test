@@ -6,6 +6,7 @@ import { useNavigate, useParams } from 'react-router-dom'
 import { useSelector } from 'react-redux'
 
 const Details = () => {
+    //declaring variable
     const navigate = useNavigate()
 
     //extracting the id of the image from the routes
