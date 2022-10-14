@@ -1,0 +1,137 @@
+.search__container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.search__header{
+    display: flex;
+    align-items: flex-start;
+    box-sizing: border-box;
+    margin: 4em 0;
+}
+
+.search__header__text{
+    flex: 0.5;
+}
+
+.search__header__text > h1{
+    margin-top: 0;
+}
+.search__header__text > p{
+    width: 80%;
+}
+
+.search__header__input{
+    flex: 0.5;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.search__input__container{
+    width: 60%;
+    height: 2.5em;
+    background-color: #251d09;
+    border-radius: 25px;
+    border:1px solid #1A1405;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2%;
+    color:  #FBAF00;
+}
+
+.search__input{
+    flex: 1;
+    outline: none;
+    background-color: inherit;
+    border: none;
+    text-indent: 5px;
+    color:  #FBAF00;
+}
+
+.search__main{
+
+    box-sizing: border-box;
+}
+
+.search__main__view{
+    background-color:  #1A1405;
+    border-bottom-right-radius: 150px;
+    border-top-left-radius: 150px;
+    border: 1px solid inherit;
+    box-sizing: border-box;
+    height: 23em;
+    margin-left: 10%;
+    width: 80%;
+}
+
+.search__main__view__image__container{
+    height: 65%;
+    width: 100%;    
+}
+
+.search__main__view__image{
+    height: 100%;
+    width: 100%;
+    border-top-left-radius: 150px;
+    object-fit: cover;
+}
+
+.search__footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 4em;
+}
+
+.search__footer__buttons{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #FBAF00;
+    border: none;
+    border-bottom-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom: 4px solid white;
+    border-right: 3px solid white;
+    width: 12em;
+    margin-right: 2em;
+    height: 3em;
+    color: white;
+    font-weight:600;
+    font-size:1rem;
+}
+
+.next{
+    background-color: white;
+    border: none;
+    border-bottom: 4px solid #FBAF00;
+    border-right: 3px solid #FBAF00;
+    color: black;  
+}
+
+@media (max-width: 700px) {
+    .search__header {
+     flex-direction: column;
+     align-items: center;
+    }
+    .search__header__text > p{
+        width: 100%;
+       
+    }
+    .search__header__input{
+        flex: 1;
+        width: 100%;
+    }
+    .search__header__text{
+        flex: 1;
+        text-align: center;
+    }
+
+    .search__input__container{
+        width: 100%;
+        padding: 0;
+    }
+  }
